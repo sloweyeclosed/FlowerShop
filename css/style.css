@@ -403,7 +403,7 @@ nav a[href="#"] {
 
 .service-item {
   position: relative;
-  z-index: -020;
+  z-index: -20;
 }
 
 .wrap {
@@ -482,7 +482,7 @@ nav a[href="#"] {
 .flower-buy {
   margin: 0 auto;
   opacity: 0;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   padding: 5px 15px;
   margin-bottom: 10px;
@@ -558,7 +558,6 @@ nav a[href="#"] {
 
 .product {
   margin-top: 50px;
-
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -567,12 +566,26 @@ nav a[href="#"] {
 .product-item {
   flex-basis: calc((100% / 60) / 3);
   outline: 1px solid #eee;
+  img {
+    width: 370px;
+  }
+  &:hover {
+    .product-price {
+      opacity: 1;
+    }
+    .flower-buy {
+      opacity: 1;
+    }
+  }
 }
 
 .text-wrapper {
   padding: 20px 23px;
 }
-
+.product-price {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
 .product-title {
   color: var(--title-nav-h);
   font-size: 18px;
