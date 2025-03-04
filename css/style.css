@@ -118,20 +118,20 @@ nav a[href="#"] {
   .container {
     padding: 200px 0;
   }
-  background: url("../img/bghero.jpg") center center/ cover no-repeat;
+  /* background: url("../img/bghero.jpg") center center/ cover no-repeat; */
 
   /* background-color: var(--hero-section-footer-bg); */
 }
 .hero-bg {
   width: 100%;
   height: 100%;
-  background-color: #2f303a80;
+  /* background-color: #2f303a80; */
 }
 
 .hero-title {
   width: 696px;
   margin: 0 auto;
-  color: var(--bg-text-footer);
+  /* color: var(--bg-text-footer); */
   text-align: center;
   font-size: 44px;
   font-style: normal;
@@ -540,9 +540,9 @@ nav a[href="#"] {
   width: 125px;
   height: 38px;
   border-radius: 4px;
-  background: var(--teams-bg-button-port);
-  border: none;
-
+  /* background: var(--teams-bg-button-port); */
+  /* border: none; */
+  background: transparent;
   color: var(--title-nav-h);
   font-size: 16px;
   font-style: normal;
@@ -550,6 +550,7 @@ nav a[href="#"] {
   line-height: calc(26 / 16);
   letter-spacing: 0.48px;
   transition: all 0.4s ease;
+  border: 1px solid var(--logo);
 }
 
 .category-all {
@@ -560,6 +561,7 @@ nav a[href="#"] {
 .category-button:hover {
   color: var(--bg-text-footer);
   background-color: var(--hover-button-span);
+  border: none;
 }
 
 .product {
