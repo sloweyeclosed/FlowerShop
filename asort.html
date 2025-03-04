@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="html" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,6 +37,7 @@
         </address>
       </div>
     </header>
+
     <main>
       <section class="select-category-item">
         <div class="container">
@@ -66,7 +67,7 @@
                 <h3 class="product-title">Амаретто</h3>
                 <p class="product-text">Букет</p>
                 <span class="product-price">7890 грн</span>
-                <button class="flower-buy">Купить</button>
+                <button onclick="openmodal()" class="flower-buy">Купить</button>
               </div>
             </li>
             <li class="product-item">
@@ -75,7 +76,7 @@
                 <h3 class="product-title">Белая идилия</h3>
                 <p class="product-text">Букет</p>
                 <span class="product-price">1690 грн</span>
-                <button class="flower-buy">Купить</button>
+                <button onclick="openmodal()" class="flower-buy">Купить</button>
               </div>
             </li>
             <li class="product-item">
@@ -84,7 +85,9 @@
                 <h3 class="product-title">Мемори Лейн</h3>
                 <p class="product-text">Букет</p>
                 <span class="product-price">2878 грн</span>
-                <button class="flower-buy">Купить</button>
+                <button ondblclick="openmodal()" class="flower-buy">
+                  Купить
+                </button>
               </div>
             </li>
             <li class="product-item">
@@ -93,7 +96,9 @@
                 <h3 class="product-title">Сапфировая элегантность</h3>
                 <p class="product-text">Букет</p>
                 <span class="product-price">3555 грн</span>
-                <button class="flower-buy">Купить</button>
+                <button ondblclick="openmodal()" class="flower-buy">
+                  Купить
+                </button>
               </div>
             </li>
             <li class="product-item">
@@ -102,7 +107,9 @@
                 <h3 class="product-title">Жемчуг</h3>
                 <p class="product-text">Букет</p>
                 <span class="product-price">2050 грн</span>
-                <button class="flower-buy">Купить</button>
+                <button ondblclick="openmodal()" class="flower-buy">
+                  Купить
+                </button>
               </div>
             </li>
             <li class="product-item">
@@ -111,7 +118,9 @@
                 <h3 class="product-title">Цветочное признание</h3>
                 <p class="product-text">сюрприз</p>
                 <span class="product-price">6800 грн</span>
-                <button class="flower-buy">Купить</button>
+                <button ondblclick="openmodal()" class="flower-buy">
+                  Купить
+                </button>
               </div>
             </li>
           </ul>
@@ -137,5 +146,57 @@
         </ul>
       </div>
     </footer>
+
+    <div class="modal-overlay" id="modal">
+      <div class="modal">
+        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="modal-form" action="">
+          <label class="form-label" for="name">Ім'я</label>
+          <div class="input-form-wrapper name">
+            <input class="form-text" type="text" name="name" id="name" />
+          </div>
+          <label class="form-label" for="tell">Телефон</label>
+          <div class="input-form-wrapper tellefon">
+            <input class="form-text" type="tel" name="tell" id="tell" />
+          </div>
+          <label class="form-label" for="email">Пошта</label>
+          <div class="input-form-wrapper email">
+            <input class="form-text" type="email" name="email" id="email" />
+          </div>
+
+          <label class="form-label" for="comentar">Ваше замовлення</label>
+          <textarea
+            class="modal-area"
+            name="comenter"
+            placeholder="Введiть ваше замовлення"
+            id="comenter"
+          ></textarea>
+          <div class="wrapper-form">
+            <input class="wrapper-input" type="checkbox" name="" id="" />
+            <p class="wrapper-text">
+              Погоджуюся з розсилкою акцiй та приймаю
+              <a class="wrapper-link" href="#"> Умови договору</a>
+            </p>
+          </div>
+          <button class="modal-btn" type="reset">Замовити</button>
+        </form>
+        <button onclick="closemodal()" class="close-modal">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+          >
+            <path
+              d="M15 4.10786L13.8921 3L9.5 7.39214L5.10786 3L4 4.10786L8.39214 8.5L4 12.8921L5.10786 14L9.5 9.60786L13.8921 14L15 12.8921L10.6079 8.5L15 4.10786Z"
+              fill="black"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
