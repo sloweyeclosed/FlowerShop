@@ -44,7 +44,7 @@ nav a[href="#"] {
 }
 
 .header {
-  border-bottom: 1px solid#ECECEC;
+  border-bottom: 1px solid var(--title-nav-h);
 }
 
 .header-flex {
@@ -72,6 +72,7 @@ nav a[href="#"] {
 }
 
 .logo {
+  transition: all 0.3s ease;
   color: var(--hover-button-span);
   font-family: "Raleway";
   font-size: 26px;
@@ -82,8 +83,15 @@ nav a[href="#"] {
 
 .logo span {
   color: var(--logo);
+  transition: all 0.3s ease;
 }
 
+.logo:hover {
+  color: var(--logo);
+  span {
+    color: var(--hover-button-span);
+  }
+}
 .header-link {
   color: var(--title-nav-h);
   font-size: 14px;
@@ -358,7 +366,7 @@ nav a[href="#"] {
   margin-bottom: 30px;
   border-radius: 4px;
   height: 120px;
-  background-color: var(--teams-bg-button-port);
+  border: 1px solid var(--title-nav-h);
 }
 
 .advantages-item:not(:last-of-type):before {
@@ -425,9 +433,7 @@ nav a[href="#"] {
 .flower {
   z-index: 1;
   padding: 94px 0;
-  background-color: var(--teams-bg-button-port);
 }
-
 .flower-list {
   padding-top: 50px;
   display: flex;
@@ -494,12 +500,12 @@ nav a[href="#"] {
 }
 
 .footer {
+  border-top: 2px solid var(--title-nav-h);
+
   padding: 60px 0;
-  background-color: var(--hero-section-footer-bg);
+  /* background-color: var(--hero-section-footer-bg); */
 }
-.footer span {
-  color: var(--bg-text-footer);
-}
+
 .footer-list {
   padding-top: 20px;
 }
@@ -509,15 +515,15 @@ nav a[href="#"] {
 }
 
 .footer-links {
-  color: var(--footer-address);
+  color: var(--title-nav-h);
   font-size: 14px;
   font-weight: 400;
   line-height: calc(24 / 14);
+  transition: all 0.3s ease;
   letter-spacing: 0.42px;
-}
-
-.footer-link {
-  color: var(--bg-text-footer);
+  &:hover {
+    color: var(--hover-button-span);
+  }
 }
 
 .select-category-item {
@@ -575,7 +581,6 @@ nav a[href="#"] {
     }
     .flower-buy {
       opacity: 1;
-      margin: 0;
     }
   }
 }
