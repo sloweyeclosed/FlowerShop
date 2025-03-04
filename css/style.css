@@ -155,6 +155,7 @@ nav a[href="#"] {
 
 .modal-overlay {
   position: fixed;
+  z-index: 20;
   top: 0;
   left: 0;
   width: 100%;
@@ -402,6 +403,7 @@ nav a[href="#"] {
 
 .service-item {
   position: relative;
+  z-index: -020;
 }
 
 .wrap {
@@ -409,7 +411,7 @@ nav a[href="#"] {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  z-index: 50;
   padding: 10px;
   position: absolute;
   bottom: 0;
@@ -420,42 +422,75 @@ nav a[href="#"] {
   height: 25%;
 }
 
-.team {
+.flower {
+  z-index: 1;
   padding: 94px 0;
   background-color: var(--teams-bg-button-port);
 }
 
-.team-list {
+.flower-list {
   padding-top: 50px;
   display: flex;
+  justify-content: center;
   gap: 30px;
 }
 
-.team-item {
+.flower-item {
+  z-index: 1;
   max-width: 270px;
+  border-radius: 5px;
   text-align: center;
   background-color: var(--bg-text-footer);
 
   font-size: 16px;
   font-style: normal;
   line-height: normal;
+  transition: all 0.4s ease;
   letter-spacing: 0.48px;
+  &:hover {
+    .flower-buy {
+      opacity: 1;
+    }
+
+    outline: 2px solid #bd82df;
+    scale: 1.05;
+  }
 }
 
-.team-img {
-  width: 270px;
+.flower-img {
+  border-radius: 5px;
+  width: 100%;
 }
-
-.team-title {
+.flower-sostav {
+  padding: 10px;
+  color: var(--title-nav-h);
+  font-weight: 400;
+  opacity: 0.9;
+}
+.flower-title {
   padding-top: 30px;
   color: var(--title-nav-h);
   font-weight: 500;
 }
 
-.team-text {
-  padding: 10px 0 30px 0;
+.flower-text {
+  padding-bottom: 10px;
   color: var(--p-title);
   font-weight: 400;
+}
+
+.flower-buy {
+  margin: 0 auto;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: none;
+  color: rgb(73, 49, 70);
+  border-radius: 5px;
+  background-color: #c59bddb4;
 }
 
 .footer {

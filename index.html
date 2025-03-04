@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="html" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -172,37 +172,64 @@
           </ul>
         </div>
       </section>
-      <section class="team">
-        <div class="container">
-          <h2 class="title">Наша команда</h2>
-          <ul class="team-list">
-            <li class="team-item">
-              <img class="team-img" src="img/igor.png" alt="team" />
-              <h3 class="team-title">Ігор Дем'яненко</h3>
-              <p class="team-text">Product Designer</p>
-            </li>
-            <li class="team-item">
-              <img class="team-img" src="img/olga.png" alt="team" />
-              <h3 class="team-title">Ольга Рєпіна</h3>
-              <p class="team-text">Frontend Developer</p>
-            </li>
-            <li class="team-item">
-              <img class="team-img" src="img/mykola.png" alt="team" />
-              <h3 class="team-title">Микола Тарасов</h3>
-              <p class="team-text">Marketing</p>
-            </li>
-            <li class="team-item">
-              <img class="team-img" src="img/mykhaylo.png" alt="team" />
-              <h3 class="team-title">Михайло Єрмаков</h3>
-              <p class="team-text">UI Designer</p>
-            </li>
-          </ul>
-        </div>
+      <section class="flower">
+        <h2 class="title">Нашi популярнi букети</h2>
+        <ul class="flower-list">
+          <li class="flower-item">
+            <img class="flower-img" src="img/buketi/mamori.png" alt="team" />
+            <h3 class="flower-title">Мемори Лейн</h3>
+            <h4 class="flower-sostav">31 роза</h4>
+            <p class="flower-text">2878 грн</p>
+            <button class="flower-buy">Купити</button>
+          </li>
+          <li class="flower-item">
+            <img
+              class="flower-img"
+              src="img/buketi/belaya-idiliya.png"
+              alt="team"
+            />
+            <h3 class="flower-title">Белая идилия</h3>
+            <h4 class="flower-sostav">9 хризантем</h4>
+            <p class="flower-text">1690 грн</p>
+            <button onclick="openmodal()" class="flower-buy">Купити</button>
+          </li>
+          <li class="flower-item">
+            <img class="flower-img" src="img/buketi/caphire.png" alt="team" />
+            <h3 class="flower-title">Сапфировая элегантность</h3>
+            <h4 class="flower-sostav">
+              17 синих импортных роз <br />
+              9 белых фрезий
+            </h4>
+            <p class="flower-text">3555 грн</p>
+            <button onclick="openmodal()" class="flower-buy">Купити</button>
+          </li>
+          <li class="flower-item">
+            <img class="flower-img" src="img/buketi/amaretto.png" alt="team" />
+            <h3 class="flower-title">Амаретто</h3>
+            <h4 class="flower-sostav">101 розовый и фиолетовый тюльпан</h4>
+            <p class="flower-text">7890 грн</p>
+            <button onclick="openmodal()" class="flower-buy">Купити</button>
+          </li>
+          <li class="flower-item">
+            <img class="flower-img" src="img/buketi/jemjug.png" alt="team" />
+            <h3 class="flower-title">Жемчуг</h3>
+            <h4 class="flower-sostav">25 белых тюльпанов</h4>
+            <p class="flower-text">2050грн</p>
+            <button onclick="openmodal()" class="flower-buy">Купити</button>
+          </li>
+          <li class="flower-item">
+            <img class="flower-img" src="img/buketi/priznanie.png" alt="team" />
+            <h3 class="flower-title">Цветочное признание</h3>
+            <h4 class="flower-sostav">сюрприз</h4>
+            <p class="flower-text">6800 грн</p>
+            <button onclick="openmodal()" class="flower-buy">Купити</button>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <a class="logo" href="#">Web<span>Studio</span></a>
+        <a class="logo" href="#">Flower<span>Shop</span></a>
         <ul class="footer-list">
           <li class="footer-item">
             <a class="footer-link footer-links" href="#"
@@ -210,7 +237,7 @@
             >
           </li>
           <li class="footer-item">
-            <a class="footer-links" href="#">info@devstudio.com</a>
+            <a class="footer-links" href="#">info@gmail.com</a>
           </li>
 
           <li class="footer-item">
