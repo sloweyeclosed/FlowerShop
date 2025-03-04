@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlowerShop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-flex">
+        <a href="#" class="logo">Flower<span>Shop</span></a>
+        <nav>
+          <ul class="header-item">
+            <li><a class="header-link" href="#">Про нас</a></li>
+            <li><a class="header-link" href="./port.html">Асортимент</a></li>
+            <li><a class="header-link" href="./cont">Контакти</a></li>
+          </ul>
+        </nav>
+        <address class="header-address">
+          <a class="header-link address-link" href="#">info@gmail.com</a>
+          <a class="header-link address-link" href="#">+38 096 111 11 11</a>
+        </address>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-bg">
+          <div class="container">
+            <h1 class="hero-title">
+              Найкращi квiти для вашої другої половинк та не тiльки
+            </h1>
+            <button type="button" onclick="openmodal()" class="btn">
+              Замовити
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div class="modal-overlay" id="modal">
+        <div class="modal">
+          <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <form class="modal-form" action="">
+            <label class="form-label" for="name">Ім'я</label>
+            <div class="input-form-wrapper name">
+              <input class="form-text" type="text" name="name" id="name" />
+            </div>
+            <label class="form-label" for="tell">Телефон</label>
+            <div class="input-form-wrapper tellefon">
+              <input class="form-text" type="tel" name="tell" id="tell" />
+            </div>
+            <label class="form-label" for="email">Пошта</label>
+            <div class="input-form-wrapper email">
+              <input class="form-text" type="email" name="email" id="email" />
+            </div>
+
+            <label class="form-label" for="comentar">Коментар</label>
+            <textarea
+              class="modal-area"
+              name="comenter"
+              placeholder="Введiть текст"
+              id="comenter"
+            ></textarea>
+            <div class="wrapper-form">
+              <input class="wrapper-input" type="checkbox" name="" id="" />
+              <p class="wrapper-text">
+                Погоджуюся з розсилкою та приймаю
+                <a class="wrapper-link" href="#"> Умови договору</a>
+              </p>
+            </div>
+            <button class="modal-btn" type="reset">Відправити</button>
+          </form>
+          <button onclick="closemodal()" class="close-modal">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+            >
+              <path
+                d="M15 4.10786L13.8921 3L9.5 7.39214L5.10786 3L4 4.10786L8.39214 8.5L4 12.8921L5.10786 14L9.5 9.60786L13.8921 14L15 12.8921L10.6079 8.5L15 4.10786Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <section class="advantages">
+        <div class="container">
+          <ul class="advantages-list">
+            <li class="advantages-item antena-svg">
+              <h3 class="advantages-title">Увага до деталей</h3>
+              <p class="advantages-text">
+                Важливо вибрати найсвіжіші квіти, а й продумати кожен елемент
+                букета, щоб створити ідеальну композицію.
+              </p>
+            </li>
+            <li class="advantages-item watch-svg">
+              <h3 class="advantages-title">пунктуальнiсть</h3>
+              <p class="advantages-text">
+                Швидка та своєчасна доставка гарантує, що квіти прибудуть
+                свіжими і в ідеальному стані.
+              </p>
+            </li>
+            <li class="advantages-item comp-svg">
+              <h3 class="advantages-title">планування</h3>
+              <p class="advantages-text">
+                Кожен букет створюється з урахуванням поєднання кольорів, форми
+                та свіжості квітів.
+              </p>
+            </li>
+            <li class="advantages-item planet-svg">
+              <h3 class="advantages-title">сучаснi технологii</h3>
+              <p class="advantages-text">
+                Новітні методи вирощування та зберігання допомагають квітам
+                залишатися свіжими довше.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="services">
+        <div class="container">
+          <h2 class="title">Чим ми займаємося</h2>
+          <ul class="service-wrapper">
+            <li class="service-item">
+              <img class="service-img" src="img/cveti1.jpg" alt="доставка" />
+              <div class="wrap">
+                <p>Доставка квітів – швидко та свіжо!</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <img
+                class="service-img"
+                src="img/cveti2.webp"
+                alt="выращевание"
+              />
+              <div class="wrap">
+                <p>Вирощування – любов у кожній квітці!</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <img
+                class="service-img"
+                src="img/cveti3.jpg"
+                alt="продажа цветов"
+              />
+              <div class="wrap">
+                <p>Продаж квітів – краса для вас!</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="team">
+        <div class="container">
+          <h2 class="title">Наша команда</h2>
+          <ul class="team-list">
+            <li class="team-item">
+              <img class="team-img" src="img/igor.png" alt="team" />
+              <h3 class="team-title">Ігор Дем'яненко</h3>
+              <p class="team-text">Product Designer</p>
+            </li>
+            <li class="team-item">
+              <img class="team-img" src="img/olga.png" alt="team" />
+              <h3 class="team-title">Ольга Рєпіна</h3>
+              <p class="team-text">Frontend Developer</p>
+            </li>
+            <li class="team-item">
+              <img class="team-img" src="img/mykola.png" alt="team" />
+              <h3 class="team-title">Микола Тарасов</h3>
+              <p class="team-text">Marketing</p>
+            </li>
+            <li class="team-item">
+              <img class="team-img" src="img/mykhaylo.png" alt="team" />
+              <h3 class="team-title">Михайло Єрмаков</h3>
+              <p class="team-text">UI Designer</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <a class="logo" href="#">Web<span>Studio</span></a>
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a class="footer-link footer-links" href="#"
+              >м. Київ, пр-т Лесі Українки, 26</a
+            >
+          </li>
+          <li class="footer-item">
+            <a class="footer-links" href="#">info@devstudio.com</a>
+          </li>
+
+          <li class="footer-item">
+            <a class="footer-links" href="#">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
