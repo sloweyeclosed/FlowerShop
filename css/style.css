@@ -556,6 +556,9 @@ nav a[href="#"] {
 .category-all {
   width: 73px;
   height: 38px;
+  color: var(--bg-text-footer);
+  background-color: var(--hover-button-span);
+  border: none;
 }
 
 .category-button:hover {
